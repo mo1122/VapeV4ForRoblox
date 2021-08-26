@@ -477,9 +477,9 @@ local swords = {
 	["diamond_sword"] = "emerald_sword"
 }
 local AutoBuy = {["Enabled"] = false}
-local AutoBuyArmor = {["Enabled"] = false}
-local AutoBuySword = {["Enabled"] = false}
-local AutoBuyUpgrades = {["Enabled"] = false}
+local AutoBuyArmor = {["Enabled"] = true}
+local AutoBuySword = {["Enabled"] = true}
+local AutoBuyUpgrades = {["Enabled"] = true}
 
 local BuyCheck = function() end
 BuyCheck = function()
@@ -720,7 +720,7 @@ BedNuker = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOpt
 end, function() end, true)
 bednukerrange = BedNuker.CreateSlider("Break range", 1, 20, function(val) end, 20)
 
-local fastbreak = {["Enabled"] = false}
+local fastbreak = {["Enabled"] = true}
 local oldbreakfunction
 fastbreak = GuiLibrary["ObjectsThatCanBeSaved"]["BlatantWindow"]["Api"].CreateOptionsButton("FastBreak", function()
 	oldbreakfunction = bedwars["BlockController3"]["hitBlock"] 
